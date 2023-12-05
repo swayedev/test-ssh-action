@@ -18,6 +18,6 @@ jobs:
     - name: connect
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}
     - name: write test file
-      run:  cat "testing" >> test.txt && exit
+      run:  ls && exit
     - name: cleanup
       run: rm -rf ~/.ssh
